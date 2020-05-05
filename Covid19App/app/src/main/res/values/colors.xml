@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#024265</color>
+    <color name="colorPrimaryDark">#024265</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorStart">#455A63</color>
+    <color name="colorEnd">#27DEBE</color>
+    <color name="buttonColor">#fb7268</color>
+    <color name="white_color">#ededf2</color>
+
+    <color name="recoverdCase">#2ecc71</color>
+    <color name="totalCase">#f1c40f</color>
+    <color name="deathCase">#e74c3c</color>
+    <color name="activeCase">#3498db</color>
+
+    <color name="back">#E3E0E0</color>
+
+</resources>

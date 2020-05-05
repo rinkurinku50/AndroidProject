@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="8dp"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingHorizontal="10dp"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/casesName"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/black"
+        android:text="Deaths"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        />
+    <TextView
+        android:id="@+id/casesId"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/black"
+        android:text="0"
+        android:fontFamily="@font/pt_serif_bold_italic"
+        android:textSize="18sp"
+        android:letterSpacing="0.2"
+        android:gravity="center_vertical|right"
+         />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchCountriesActivity"
+    android:paddingHorizontal="5dp"
+    android:background="@color/back"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="10dp"
+        >
+
+        <EditText
+            android:id="@+id/searchCountry"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Search"
+
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/border_edit_text"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/colorPrimary"
+            android:inputType="text"
+            android:textColorHint="@color/colorPrimary"
+            android:textCursorDrawable="@drawable/cursor_color"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/countryRecycler"
+          />
+
+    </LinearLayout>
+
+    <com.leo.simplearcloader.SimpleArcLoader
+        android:id="@+id/countryloader"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        app:arc_style="simple_arc"></com.leo.simplearcloader.SimpleArcLoader>
+
+</RelativeLayout>
